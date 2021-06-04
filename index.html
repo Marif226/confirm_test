@@ -1,18 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-  <h1>Claculator</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <form class = "reg-form" method = "post">
+        <h1 class = "reg-title">Registration</h1>
 
+        <div class = "group">
+            <label>User name</label><br>
+            <input type = "text" name = "userName">
+        </div>
 
-<form  action="/" method="post">
-  <input type="text" name="num1" placeholder="enter num 1">
-  <input type="text" name="num2" placeholder="enter num2">
-  <button type="submit" name="button">Add numbers</button>
-</form>
+        <div class = "group">
+            <label>Your name</label><br>
+            <input type = "text" name = "name">
+        </div>
 
-  </body>
+        <div class = "group">
+            <label>Your surname</label><br>
+            <input type = "text" name = "surname">
+        </div>
+
+        <div class = "group">
+            <label>Your E-mail</label><br>
+            <input type = "text" name = "email">
+        </div>
+
+        <div class = "group">
+            <label>Password</label><br>
+            <input type = "text">
+        </div>
+
+        <div class = "group">
+            <label>Confirm password</label><br>
+            <input type = "text">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</body>
 </html>

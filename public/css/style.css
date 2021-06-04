@@ -1,0 +1,150 @@
+body {
+    font-family: Tahoma;
+}
+img{
+    max-width: 100%;
+}
+.main-title {
+    text-align: center;
+}
+
+.reg-form {
+    margin-top: 50px;
+    border: 3px solid #007BFF;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #dddddd;
+}
+
+.reg-title{
+    padding: 5px;
+    border-bottom: 3px solid #007BFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.con-form {
+    margin-top: 50px;
+    border: 3px solid #007BFF;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    background-color: #dddddd;
+}
+
+.con-title {
+    text-align: center;
+}
+
+.con-info {
+    padding: 10px;
+}
+
+.group {
+    text-align: center;
+    height: 70px;
+}
+
+.group__input{
+    border: 3px solid #007BFF;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.btn{
+    width: 200px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: 700;
+}
+label{
+    font-weight: 700;
+}
+
+.catalog {
+    width: 750px;
+    margin: auto;
+}
+
+.catalog h2 {
+    text-align: center;
+}
+
+.catalog hr {
+    border: 3px solid black;
+    border-style: inset none none none;
+}
+
+.catalog img {
+    width: 120px;
+    height: 120px;
+}
+
+.col1 {
+    max-width: 7%;
+}
+.catalog
+{
+    border: 3px solid #007BFF;
+    background-color: #dddddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.catalog-element
+{
+    display: flex;
+    align-items: center;
+}
+.catalog-element__checkbox{
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+
+}
+.catalog-element-description{
+    margin-left: 10px;
+}
+.catalog-element-description__title{
+    align-self: center;
+}
+.catalog-element-description__info
+{
+    opacity: 60%;
+}
+.catalog-element-description-buy{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    flex-wrap: wrap;
+
+
+}
+.catalog-element-description-buy__input{
+    width: 120px;
+    border-radius: 10px;
+    border: 3px solid #007BFF;
+}
+.catalog-element-description-buy__select{
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    border: 3px solid #007BFF;
+}
+input,button,select,option:focus {outline:0;}
+label{
+    margin-top: 5px;
+}
+
+.price{
+    text-decoration: underline;
+}

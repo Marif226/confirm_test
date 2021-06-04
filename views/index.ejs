@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class = "main-title">Welcome to Burger Queen!</h1>
+    <form action = "/" method = "post">
+        <div class = "reg-form">
+            <h2 class = "reg-title">Personal information</h2>
+            <div class = "group">
+                <input type = "text" name = "name" class="group__input" placeholder="Your name">
+            </div>
+            <div class = "group">
+                <input type = "text" name = "surname" class="group__input" placeholder="Your surname">
+            </div>
+            <div class = "group">
+                <input type = "email" name = "email" class="group__input" placeholder="Your E-mail">
+            </div>
+            <div class = "group">
+                <input type = "number" name = "number" class="group__input" placeholder="Your number">
+            </div>
+            <div class = "group">
+                <input type = "text" name = "address" class="group__input" placeholder="Your address">
+            </div>
+            <div class = "group">
+                <input type = "password" class="group__input" placeholder="Password">
+            </div>
+            <div class = "group">
+                <input type = "password" class="group__input" placeholder="Confirm password">
+            </div>
+        </div><br>
+
+        <div class = "catalog">
+            <h2>Choose your order</h2><hr>
+            <div class = "catalog-element">
+                    <input type = "checkbox" name = "check" value = "Burger" class="catalog-element__checkbox">
+                    <img src = "img/burger.jpg" >
+                <div class="catalog-element-description">
+                    <h4 class="catalog-element-description__title">Burger</h4>
+                    <span class="catalog-element-description__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, sequi.</span>
+                    <div class="catalog-element-description-buy">
+                        <label for="quantity">Quantity</label>
+                        <input type = "number" name = "quantity" class="catalog-element-description-buy__input burgerQuantity">
+                        <label for="taste">Taste</label>
+                        <select name="taste"  class="catalog-element-description-buy__select">
+                            <option value="spicy">Spicy</option>
+                            <option value="normal">Normal</option>
+                        </select>
+                        <span class="price"><span class="priceBurger" value="1000">0</span> KZT</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "catalog-element">
+                    <input type = "checkbox" name = "check" value = "Double Cheese-Burger" class="catalog-element__checkbox">
+                    <img src = "img/double_cheeseburger.webp" >
+                <div class="catalog-element-description">
+                    <h4 class="catalog-element-description__title">Double Cheese Burger</h4>
+                    <span class="catalog-element-description__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, sequi.</span>
+                    <div class="catalog-element-description-buy">
+                        <label for="quantity">Quantity</label>
+                        <input type = "number" name = "quantity" class="catalog-element-description-buy__input DoubleCheeseBurgerQuantity">
+                        <label for="taste">Taste</label>
+                        <select name="taste"  class="catalog-element-description-buy__select">
+                            <option value="spicy">Spicy</option>
+                            <option value="normal">Normal</option>
+                        </select>
+                        <span class="price"><span class="priceDoubleCheeseBurger" value="1500">0</span> KZT</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "catalog-element">
+                    <input type = "checkbox" name = "check" value = "Hot-Dog" class="catalog-element__checkbox">
+                    <img src="img/Hotdog.webp">
+                <div class="catalog-element-description">
+                    <h4 class="catalog-element-description__title">Hot Dog</h4>
+                    <span class="catalog-element-description__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, sequi.</span>
+                    <div class="catalog-element-description-buy">
+                        <label for="quantity">Quantity</label>
+                        <input type = "number" name = "quantity" class="catalog-element-description-buy__input HotDogBurger">
+                        <label for="taste">Taste</label>
+                        <select name="taste"  class="catalog-element-description-buy__select">
+                            <option value="spicy">Spicy</option>
+                            <option value="normal">Normal</option>
+                        </select>
+                        <span class="price"><span class="priceHotDog" value="700">0</span> KZT</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "catalog-element">
+                    <input type = "checkbox" name = "check" value = "Doner" class="catalog-element__checkbox">
+                    <img src="img/doner.webp">
+                <div class="catalog-element-description">
+                    <h4 class="catalog-element-description__title">Doner</h4>
+                    <span class="catalog-element-description__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, sequi.</span>
+                    <div class="catalog-element-description-buy">
+                        <label for="quantity">Quantity</label>
+                        <input type = "number" name = "quantity" class="catalog-element-description-buy__input DonerBurger">
+                        <label for="taste">Taste</label>
+                        <select name="taste"  class="catalog-element-description-buy__select">
+                            <option value="spicy">Spicy</option>
+                            <option value="normal">Normal</option>
+                        </select>
+                        <span class="price"><span class="priceDoner" value="900">0</span> KZT</span>
+                    </div>
+                </div>
+            </div>
+            <center><p>TOTAL: <span class="total" name="totalSum" value="0">0</span></p></center>
+
+
+
+        </div><br>
+
+
+        <center><button type="submit" class="btn btn-primary">NEXT</button></center>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

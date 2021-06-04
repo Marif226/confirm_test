@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+    <div class = "con-form">
+        <h1 class = "con-title">Confirmation form</h1>
+        <div class = "con-info">
+            <p>Full name: <%=data.name + " " + data.surname%></p>
+            <p>Your E-mail: <%=data.email%></p>
+            <p>Your Telephone number: <%=data.number%></p>
+            <p>Your address: <%=data.address%></p>
+            <center><h4>Your order:</h4></center>
+            <p><%= "Burger - x" + data.quantity[0] + ", " + data.taste[0] + " taste"%></p>
+            <p>Double Cheese-Burger - <%= "x" + data.quantity[1] + ", " + data.taste[1] + " taste"%></p>
+            <p>Hot-Dog - <%= "x" + data.quantity[2] + ", " + data.taste[2] + " taste"%></p>
+            <p>Doner - <%= "x" + data.quantity[3] + ", " + data.taste[3] + " taste"%></p>
+            <p>Total sum: <%= (data.quantity[0]*1000+data.quantity[1]*1500+data.quantity[2]*700+data.quantity[3]*900)%></p>
+            <center><button type="button" class="btn btn-primary">NEXT</button></center>
+        </div>
+    </div>
+</body>
+</html>
